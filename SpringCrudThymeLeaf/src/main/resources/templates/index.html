@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Ludoteca</title>
+<style>
+.blue-button {
+	background: #25A6E1;
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',
+		endColorstr='#188BC0', GradientType=0);
+	padding: 3px 5px;
+	color: #fff;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 12px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #1A87B9
+}
+
+table {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	width: 50%;
+}
+
+th {
+	background: SteelBlue;
+	color: white;
+}
+
+td, th {
+	border: 1px solid gray;
+	width: 25%;
+	text-align: left;
+	padding: 5px 10px;
+}
+</style>
+</head>
+<body>
+	<div align="center">
+		<h1>Videogiochi</h1>
+		<a href="/new" class="blue-button">Aggiungi videogioco</a> <br />
+		<br />
+		<table class="tg">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Titolo</th>
+					<th>Genere</th>
+					<th>Longevità</th>
+					<th>Completato</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="vg : ${listaVG}">
+					<td th:text="${vg.id}">ID</td>
+					<td th:text="${vg.titolo}">Titolo</td>
+					<td th:text="${vg.genere}">Genere</td>
+					<td th:text="${vg.longevita}">Longevità</td>
+					<td th:text="${vg.completato}">Completato</td>
+
+					<td><a th:href="@{'/edit/' + ${vg.id}}">Modifica</a>
+						&nbsp;&nbsp;&nbsp; <a th:href="@{'/delete/' + ${vg.id}}">Elimina
+					</a></td>
+
+				</tr>
+			</tbody>
+		</table>
+			<form th:action="@{/search}">
+   				<input type="text" id="genere" name="genere" />
+   				<button type="submit" class="blue-button">Cerca per genere</button>
+			</form>
+		<a href="/" class="blue-button">Visualiza tutti</a> <br />
+	</div>
+</body>
+</html>

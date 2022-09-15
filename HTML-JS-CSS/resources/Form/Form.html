@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Elementi delle form</h1>
+
+<form name="test" method="post">
+
+  <label for="fname">Nome:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Cognome:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  
+<fieldset>
+<legend>Sesso</legend>
+<input type="radio" name="sesso" value="Maschio"/>Maschio<br>
+<input type="radio" name="sesso" value="Femmina"/>Femmina<br>
+<input type="radio" name="sesso" value="Altro"/>Altro 
+</fieldset>
+
+<fieldset>
+<legend>Nazionalità</legend>
+<select name="nazionalita"  >
+<option value="Italiana" selected="selected">Italiana </option>
+<option value="Straniera">straniera </option>
+</select>
+</fieldset>
+  
+<fieldset>
+<legend>Linguaggi conosciuti</legend><br>
+<input type="checkbox" name="html" value="html"/> html
+<br />
+<input type="checkbox" name="css" value="css"/> css
+<br />
+<input type="checkbox" name="javascript" value="javascript"/> JavaScript
+</fieldset>
+
+<textarea name="testo" rows=10 cols=50>Scrivi qui la tua esperienza</textarea><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

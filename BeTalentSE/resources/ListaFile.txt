@@ -1,0 +1,7 @@
+nome file: bufferedIndex.jsp
+nome file: index.jsp
+nome file: ListaFile.txt
+nome dir: SottoDirectory
+nome file: Testo.txt
+nome file: TestoCopiato.txt
+nome file: TestoNuovo.txt

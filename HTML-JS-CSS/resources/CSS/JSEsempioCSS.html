@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+<script>
+	function lanciaAlert() {
+		alert("Messaggio di alert");
+	}
+	
+	function cambiaScritta() {
+		  document.getElementById("cambia").innerHTML = "Sono cambiato!";
+	}
+</script>
+</head>
+
+<body>
+
+	<div>
+		<h2 id="cambia" style="text-decoration: underline; color: rgb(0, 255, 255);" onclick="cambiaScritta()">Modifica
+			dinamica di un testo (onclick)</h2>
+
+		<button type="button"
+			onclick="document.getElementById('demo').innerHTML = 'Ciao cari!'">
+			Premi per ricevere un classico saluto</button>
+
+		<button type="button"
+			onclick="document.getElementById('demo').innerHTML = ''">
+			Premi per nascondere il saluto</button>
+
+		<p id="demo"></p>
+
+		<h1 onclick="this.innerHTML = 'Posso cambiare!'">Clicca su questo
+			testo</h1>
+
+		<h3 id="text1">Il bottone rimanda a un riferimento esterno</h3>
+		<button onclick="window.location='http://www.google.com'">Google</button>
+		<br> <br>
+
+		<h3 id="text2">Il bottone rimanda a un riferimento interno</h3>
+		<button onclick="self.location='StrutturaBase.html'">Pagina
+			d'esempio HTML</button>
+		<br> <br>
+
+		<button type="button" onclick="lanciaAlert()">Alert!</button>
+
+		<div class="classe1">Testo relativo a "classe1" in un div</div>
+
+		<p class="classe1">Testo relativo a "classe1" in un p</p>
+
+		<div class="login">
+		<h1>Insert Login Information</h1>
+		<form method="post">
+			<p><FONT size="4">Email</FONT></p>
+			<input type="text" name="email" placeholder="Email" required>
+			<p><FONT size="4">Password</FONT></p>
+			<input type="password" name="password" placeholder="Password" required>
+			 <input type="submit" value="Login"></form>
+		</div>
+	</div>
+</body>
+</html>

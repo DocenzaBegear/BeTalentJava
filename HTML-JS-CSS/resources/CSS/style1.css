@@ -1,0 +1,30 @@
+div {
+	background-color: green;
+}
+
+#text1 {
+	font-size: 30px;
+}
+
+#text2 {
+	background-color: yellow;
+}
+
+.classe1 {
+	background-color: blue;
+}
+
+.login input[type=submit]{
+	border: none;
+	border-radius: 20px;
+	height: 40px;
+	background: white;
+	color: blue;
+	font-size: 18px;
+}
+.login input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: black;
+	color: yellow;
+}

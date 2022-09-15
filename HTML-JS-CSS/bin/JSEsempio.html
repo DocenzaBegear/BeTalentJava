@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h2>Modifica dinamica di un testo (onclick)</h2>
+
+	<button id="bottone1">Premi per ricevere un classico saluto</button>
+
+	<button id="bottone2">Premi per nascondere il saluto</button>
+
+	<p id="demo"></p>
+
+	<h1 onclick="this.innerHTML = 'Posso cambiare!'">Clicca su questo testo</h1>
+
+	<h3>Il bottone rimanda a un riferimento esterno</h3>
+	<button onclick="window.location='http://www.google.com'">Google</button>
+	<br>
+	<br>
+
+	<h3>Il bottone rimanda a un riferimento interno</h3>
+	<button onclick="self.location='StrutturaBase.html'">Pagina d'esempio HTML</button>
+	<br>
+	<br>
+
+	<button type="button" onclick="lanciaAlert()">Alert!</button>
+	
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

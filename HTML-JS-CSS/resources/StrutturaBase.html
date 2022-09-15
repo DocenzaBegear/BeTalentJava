@@ -1,0 +1,132 @@
+<!doctype html>
+<!-- Comunica il tipo di documento -->
+
+<html>
+<!-- Apertura del file -->
+<head>
+<!--  metadati della pagina -->
+
+<title>Pagina HTML di esempio</title>
+
+
+<style type="text/css">
+body {
+	background-color: rgb(0, 255, 255);
+	font-size: 20px;
+}
+</style>
+
+<!--  rel dichiara la relazione con il file, in questo caso una stylesheet. Altro esempio: icon -->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="fileCSS/mystyle.css">
+<link rel="stylesheet" type="text/css" href="../../mystyle.css">
+
+</head>
+
+<body>
+	<p>
+		testo in <strong>grassetto</strong>, oppure <em>in
+	    corsivo</em>. Si pu&#243 anche <br>andare a capo
+	</p>
+
+	<img src="JavaLogo.jpg" height="100px" width="150px"
+		alt="Qui ci andrebbe una immagine">
+	<!-- alt tiene l'alternativa testuale all'immagine -->
+	
+	<br>
+	
+	<!-- 'a' si usa come tag di navigazione tra le pagine -->
+	<a href="http://www.google.com" title="Google" target="_blanc">Vai
+		al motore di ricerca</a>
+		
+	<br>
+	
+	<a href="C:\Users\yamif\eclipse-workspace\HTML-JS-CSS\resources\sfondo.jpg">
+	Cambiafile (percorso assoluto)</a>
+	
+	<br>
+	
+	<a href="sfondo.jpg">Cambia file (percorso relativo)</a>
+	
+	<br>
+	
+	<a href="#portamiQUI">Sposta!</a>
+	
+	<h1>Testo più grosso</h1>
+	<h6>Testo più piccolo</h6>
+	
+	<!-- Elenco -->
+	<ul>
+		<!-- 'ol' per elenchi numerati -->
+		<li>Tempo</li>
+		<li>Spazio</li>
+		<li>Energia</li>
+	</ul>
+	
+	<!-- Tabella -->
+	<table>		
+		<caption>Tabella di prova</caption>
+		<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Sesso</th>
+			<th>Stipendio</th>
+		</tr>
+		</thead>
+		<tr>
+			<td>Pino</td>
+			<td>Maschio</td>
+			<td>2000</td>
+		</tr>
+		<tr>
+			<td>Giovanna</td>
+			<td>Femmina</td>
+			<td>2000</td>
+		</tr>
+		<tr>
+			<td colspan="2">Totale</td>
+			<td>4000</td>
+		</tr>
+	</table>
+	
+	<br>
+	
+	<!-- da usare con CSS per delimitare blocchi di testo con uno stile -->
+	<div></div>
+	
+	<!-- da usare con CSS per dare uno stile a elementi dentro un altro stile, come i testi -->
+	<span></span>
+
+	<!-- Esecuzione di codice JavaScript -->
+	<script>
+		document.getElementById("para1").innerHTML = "Hello	JavaScript!";
+	</script>
+	
+	<!-- Esecuzione di un file JavaScript -->
+	<script type=”text/javascript” src="myscripts.js"></script>
+	
+	<video width="600" controls>
+		<source src="videoES.mp4" type="video/mp4">
+	</video>
+	
+	<header>
+		<!-- Banner e logo -->
+	</header>
+	
+	<nav>
+		<!-- Link alle diverse parti del sito -->
+	</nav>
+	
+	<main>
+		<!-- Corpo principale -->
+	</main>
+	
+	<footer>
+		<!-- Contatti, partita IVA, Copywright -->
+	</footer>
+	
+	<canvas width="150" height="150" style="border:1px solid black;"></canvas>
+
+	<a id="portamiQUI">
+</body>
+</html>

@@ -1,0 +1,27 @@
+div, p, ul {
+	background-color: red;
+}
+
+
+a:link { text-decoration: underline; color: #000000; }
+a:visited { text-decoration: none; color: #0080FF; }
+a:hover { color: #00FF00; }
+a:active { color: #FF00FF; }
+
+
+table {
+	border: dashed 1px black;
+	padding: 50px;
+	margin: 60px;
+}
+
+th {
+	border: solid 1px black;
+	padding: 30px;
+	text-align: center;
+}
+
+td {
+	border: solid 1px black;
+	padding: 20px;
+}
